@@ -1,0 +1,29 @@
+{
+  "name": "tarot-reading",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Situs Tarot Reading bergaya vintage Rider–Waite — tanpa AI, tanpa login.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "art": "node scripts/generate-card-art.mjs",
+    "data:validate": "node scripts/validate-data.mjs --quiet",
+    "data:build": "node scripts/build-data.mjs",
+    "seed:supabase": "node --env-file=.env.local scripts/seed-supabase.mjs",
+    "test": "node scripts/test-engine.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "framer-motion": "^12.0.0",
+    "next": "^15.5.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
+    "tailwindcss": "^4.0.0"
+  },
+  "engines": { "node": ">=20.9" }
+}
